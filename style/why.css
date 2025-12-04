@@ -1,0 +1,184 @@
+.why_choose_section {
+
+    background-color: #F3F1EE;
+    padding: 86px 0;
+    margin: 90px 0;
+}
+
+.why_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.why_choose_section .why_box .image_box_why {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 27px;
+    gap: 25px;
+    max-width: 496px;
+}
+
+
+.why_choose_section .text_box_why {
+    max-width: 595px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.why_choose_section .title_box {
+    text-align: center;
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
+}
+
+.why_choose_section .title_box .title {
+    font-size: 48px;
+}
+
+.why_choose_section .title_box .titlte_des {
+    color: #606060;
+}
+
+.why_choose_section .love_box {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+
+
+
+.why_choose_section .love_box .love_text_box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.why_choose_section .human_text_box,
+.pata_text_box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+
+
+.pata_box,
+.human_box {
+    margin-left: 10%;
+    display: flex;
+    gap: 5px;
+}
+
+.why_choose_section .vet {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.why_choose_section .text_box_why_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+.why_choose_section .love_box .Natural {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why_choose_section .vet_des {
+    font-weight: 600;
+    font-size: 20px;
+    color: #606060;
+    line-height: 28px;
+}
+
+.why_choose_section .love_box .love_text_box_des {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #606060;
+}
+
+
+
+
+
+
+
+@media screen and (max-width : 576px) {
+
+
+    .why_choose_section .title_box .title {
+        font-size: 30px;
+
+    }
+
+    .why_choose_section .love_box .Natural {
+        font-size: 20px;
+
+    }
+
+    .why_choose_section .title_box .titlte_des {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .why_choose_section .why_box .image_box_why img {
+        width: 100%;
+
+    }
+
+    .why_choose_section .love_box .love_text_box_des {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+
+    }
+
+    .why_choose_section .text_box_why {
+        margin-bottom: 40px;
+}
+
+
+    .why_choose_section .vet {
+        line-height: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+
+    .why_choose_section .love_box .love_text_box_des {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+
+    }
+
+    .pata_box,
+    .human_box {
+        margin-left: 0;
+        display: flex;
+        gap: 5px;
+    }
+
+
+
+    .why_choose_section .vet_des {
+        font-weight: 500;
+        font-size: 15px;
+
+        line-height: 20px;
+    }
+
+
+
+
+}

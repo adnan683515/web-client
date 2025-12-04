@@ -1,0 +1,62 @@
+.joinTheClub {
+    /* Dark background from the image */
+    background-color: #F3F1EE;
+
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.joinTheClub h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.club-tagline {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+
+}
+
+.club-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.club-feature-item{
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.club-member-button {
+    background-color: #333;
+    /* Dark button background */
+    color: #fff;
+    border: 1px solid #666;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.club-member-button:hover {
+    background-color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .club-features {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}

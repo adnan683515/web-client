@@ -1,0 +1,264 @@
+
+.petCare_productSection {
+    padding: 60px 0; 
+    background-color: #ffffff;
+}
+
+.petCare_container {
+    padding: 0 15px;
+}
+
+
+.petCare_titleBox {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.petCare_titleBox .petCare_title {
+    font-size: 2.5em; 
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.petCare_titleBox .petCare_des {
+    font-size: 1.1em;
+    color: #666;
+}
+
+
+.petCare_productWrapper {
+    position: relative;
+    margin: 50px auto; 
+}
+
+
+.petCare_productWrapper .petCare_handImg {
+    position: absolute;
+    width: 150px; 
+    right: 0;
+    top: -50px; 
+    z-index: 0; 
+
+    transform: translate(20%, -20%); 
+    opacity: 0.6; 
+    pointer-events: none; 
+}
+
+
+.petCare_productWrapper .petCare_productGrid {
+  
+    display: grid;
+  
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    margin: 50px 0;
+}
+
+
+.petCare_productWrapper .petCare_productGrid .petCare_card {
+
+    position: relative; 
+    background-color: #F3F1EE; 
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.petCare_productWrapper .petCare_productGrid .petCare_card .petCare_badge {
+    position: absolute;
+    top: 15px;
+    left: 0;
+
+    background-color: #A5E9F1; 
+    color: #262626;
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 0.85em;
+    z-index: 10;
+
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Product Image Styling --- */
+.petCare_productWrapper .petCare_card .petCare_img {
+    width: 100%;
+    /* Ensure image fills its container, adjust object-fit if images are different aspect ratios */
+    height: auto; 
+    display: block;
+}
+
+/* --- Card Body/Content Styling --- */
+.petCare_cardBody {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.petCare_productWrapper .petCare_productGrid .petCare_cardTitle {
+    font-size: 1.2em; 
+    font-weight: 600;
+    margin: 0;
+    color: #262626;
+}
+
+
+.petCare_productPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.petCare_price {
+    font-size: 1.6em; 
+    font-weight: 700;
+    color: #262626;
+}
+
+.petCare_productWrapper .petCare_cardBody .petCare_rating {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 5px;
+    color: #262626;
+}
+
+
+
+
+
+.petCare_buttonBox {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.petCare_productWrapper .petCare_card .petCare_buyNow {
+
+    padding: 15px 45px;
+    background-color: #262626;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.petCare_productWrapper .petCare_card .petCare_buyNow:hover {
+    background-color: #000000;
+}
+
+.petCare_productWrapper .petCare_card .petCare_cartIcon {
+
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    background-color: #262626; /* Use an accent color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+/* SVG Cart color is controlled inside the HTML path fill="#F3F1EE" */
+
+/* --- Shop All Button Styling --- */
+.petCare_shopAllBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.petCare_shopAllBtn button {
+    padding: 15px 30px;
+    display: flex;
+    color: white;
+    border-radius: 8px;
+    align-items: center;
+    font-size: 1.1em;
+    gap: 10px;
+    background-color: #262626;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.petCare_shopAllBtn button:hover {
+    background-color: #000000;
+}
+
+
+/* ===================================== */
+/* --- RESPONSIVENESS (Media Queries) --- */
+/* ===================================== */
+
+/* Tablet (577px to 1024px) */
+@media screen and (min-width : 577px) and (max-width : 1024px) {
+    .petCare_productWrapper .petCare_productGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        gap: 20px;
+    }
+    
+    .petCare_productWrapper .petCare_handImg {
+        /* Hide or adjust significantly for smaller tablet screens */
+        display: none; 
+    }
+}
+
+/* Large Tablet/Small Desktop (1025px to 1200px) */
+@media screen and (min-width : 1025px) and (max-width : 1200px) {
+    .petCare_productWrapper .petCare_productGrid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for slightly smaller desktops */
+    }
+}
+
+/* Mobile (max-width 576px) */
+@media screen and (max-width : 576px) {
+    .petCare_productSection {
+        padding: 40px 0;
+    }
+
+    .petCare_titleBox .petCare_title {
+        font-size: 2em;
+    }
+    
+    .petCare_productWrapper .petCare_productGrid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+        margin: 30px 0;
+    }
+
+    .petCare_productWrapper .petCare_card .petCare_buyNow {
+        padding: 10px 0;
+        font-size: 1em;
+    }
+
+    .petCare_productWrapper .petCare_card .petCare_cartIcon {
+        width: 45px; 
+        height: 45px;
+    }
+    
+    .petCare_price {
+        font-size: 1.4em;
+    }
+    
+    .petCare_productWrapper .petCare_cardBody .petCare_rating {
+        font-size: 1em;
+    }
+
+    .petCare_productWrapper .petCare_handImg {
+        display: none; /* Hide decorative image on mobile */
+    }
+}

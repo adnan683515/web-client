@@ -1,0 +1,188 @@
+.our_values_section .our_values_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.our_values_section .kutta_outSidediv {
+    display: flex;
+    max-width: 627px;
+    align-items: center;
+    justify-content: end;
+
+    max-height: 500px;
+}
+
+.our_values_section .kutttaBox {
+    position: relative;
+    width: 100%;
+
+}
+
+
+.our_values_section .kutta_shape_box {
+    display: flex;
+    justify-content: end;
+    margin-top: 60px;
+}
+
+.our_values_section .kutta {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    left: 5%;
+    top: -20%;
+}
+
+.our_values_section .polygon {
+
+
+    z-index: -1;
+    width: 80%;
+
+}
+
+
+
+
+
+
+.our_values_section .values-section {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    max-width: 650px;
+
+
+}
+
+
+.our_values_section .values-heading {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.our_values_section .values-subtitle {
+    font-size: 1em;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* --- LIST STYLING --- */
+.our_values_section .values-list {
+    list-style: none;
+    /* Remove default list bullets */
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.our_values_section .value-item {
+    margin-bottom: 20px;
+    /* Space between each value item */
+}
+
+/* --- HEADER (CHECKMARK + TITLE) STYLING --- */
+.our_values_section .value-header {
+    display: flex;
+    /* Use Flexbox for checkmark and title alignment */
+    align-items: center;
+    /* Vertically align items */
+    margin-bottom: 10px;
+}
+
+.our_values_section .checkmark {
+    /* Style for the checkmark to look like the image */
+    color: white;
+    /* Checkmark icon color */
+    background-color: #28a745;
+    /* A standard green color, adjust to match your exact shade */
+    border-radius: 50%;
+    /* Make it a circle */
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    /* Important for flex layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 900;
+    margin-right: 10px;
+    /* Space between checkmark and title */
+}
+
+.our_values_section .point_box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.our_values_section .value-title {
+    font-size: 1.1em;
+    /* Slightly larger than description */
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- DESCRIPTION STYLING --- */
+.our_values_section .value-description {
+    font-size: 0.95em;
+    /* Slightly smaller text */
+    color: #444;
+    line-height: 34px;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+    /* Remove default paragraph bottom margin */
+}
+
+
+@media screen and (max-width : 576px) {
+
+
+    .our_values_section .our_values_wrapper {
+        flex-direction: column;
+    }
+
+
+    .our_values_section .polygon {
+        width: 90%;
+        margin: auto;
+    }
+
+    .our_values_section .kutta {
+
+        width: 60%;
+
+        left: 10%;
+        top: -20%;
+    }
+
+    .our_values_section .value-header {
+
+        margin-bottom: 0px;
+    }
+
+
+    .our_values_section .kutta_shape_box {
+
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .our_values_section .values-section {
+
+        margin-top: 10%;
+
+
+    }
+}

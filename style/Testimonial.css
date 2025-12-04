@@ -1,0 +1,113 @@
+/* Common Text Style */
+.section-tagline,
+.tagline {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    display: block;
+}
+
+
+
+
+.testimonials-section {
+    text-align: center;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.testimonials-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonials-section .subtitle {
+    font-style: italic;
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.testimonial-card {
+    background-color: #eaf8ff;
+    padding: 30px 20px 20px;
+    border-radius: 12px;
+    border: 1px solid #7ebce6;
+    text-align: center;
+    position: relative;
+    padding-top: 80px;
+    min-height: 250px;
+}
+
+/* Profile Image Styling - Floating outside the card */
+.testimonial-card .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Star Rating Styling */
+.star-rating {
+    color: #ffc107;
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.star-empty {
+    color: #ccc;
+}
+
+.testimonial-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        margin-bottom: 20px;
+    }
+}

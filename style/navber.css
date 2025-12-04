@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navHeading {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    flex-wrap: wrap;
+
+}
+
+.navHeading .navSearchBox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #F3F1EE;
+    padding: 9px 21px;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+
+}
+
+.navHeading .navSearchBox .searchInput {
+    border: none;
+    font-size: 20px;
+    background: none;
+    outline: none;
+}
+
+
+
+.navHeading .navHeadingrightBox {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.navHeading .navHeadingrightBox button {
+    border: none;
+    background: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.navHeading .navHeadingrightBox button:hover {
+    background: black;
+    color: white;
+
+}
+
+
+.subHeading {
+    background-color: #262626;
+    color: white;
+    display: flex;
+    margin-top: 10px;
+    padding: 18px 0;
+    justify-content: center;
+}
+
+.subHeading .menuBox {
+    display: flex;
+    gap: 60px;
+    font-size: 20px;
+
+}
+
+.subHeading .menuBox a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+    .navHeading .navSearchBox {
+        gap: 5px;
+        padding: 4px 10px;
+
+    }
+
+    .navHeading .navSearchBox .searchInput {
+        border: none;
+        font-size: 14px;
+        background: none;
+        outline: none;
+    }
+
+    .navHeading .navHeadingrightBox {
+        gap: 2px;
+    }
+
+    .navHeading .navHeadingrightBox button {
+        border: none;
+        background: none;
+        padding: 8px 8px;
+        font-size: 14px;
+
+    }
+
+
+
+    .subHeading .menuBox {
+        display: flex;
+        gap: 10px;
+        font-size: 13px;
+        flex-wrap: wrap;
+    }
+
+}
