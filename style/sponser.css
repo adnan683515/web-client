@@ -21,7 +21,8 @@
 .sponser-wrapper .sponser-box {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 131px;
+   
+
     justify-content: space-between;
 }
 

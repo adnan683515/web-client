@@ -8,7 +8,7 @@
 .why_box {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+
 }
 
 .why_choose_section .why_box .image_box_why {
@@ -113,7 +113,24 @@
 
 
 
+@media screen and (min-width : 576px) and (max-width : 1024px) {
+       .why_box {
+
+    flex-wrap: wrap;
+   
+}
+
+}
+
+
 @media screen and (max-width : 576px) {
+
+
+       .why_box {
+
+    flex-direction: column;
+   
+}
 
 
     .why_choose_section .title_box .title {
@@ -145,7 +162,7 @@
 
     .why_choose_section .text_box_why {
         margin-bottom: 40px;
-}
+    }
 
 
     .why_choose_section .vet {
@@ -168,6 +185,7 @@
         display: flex;
         gap: 5px;
     }
+
 
 
 

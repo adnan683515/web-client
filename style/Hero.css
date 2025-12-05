@@ -132,12 +132,23 @@
 
 @media screen and (max-width: 576px) {
 
+    .hero-section .text-box {
+      
+
+        align-items: center;
+  
+     
+    }
+
     .hero-section .text-box .Premium {
         font-size: 30px;
         font-weight: 500;
         text-align: center;
     }
 
+    .hero-section .hero-wrapper .text-box .bandage {
+        padding: 5px;
+    }
     .hero-wrapper {
 
         flex-direction: column-reverse;

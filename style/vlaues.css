@@ -155,16 +155,16 @@
 
 
     .our_values_section .polygon {
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
 
     .our_values_section .kutta {
 
-        width: 60%;
+        width: 70%;
 
         left: 10%;
-        top: -20%;
+        top: -30%;
     }
 
     .our_values_section .value-header {
