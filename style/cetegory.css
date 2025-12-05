@@ -4,6 +4,7 @@
     align-items: center;
     margin-top: 100px;
     margin-bottom: 50px;
+ 
 }
 
 .shop-cetegory-wrapper .cetegory-box {
@@ -95,7 +96,6 @@
     }
 
     .shop-cetegory-wrapper .cetegory-box .cetegory-item-box {
-
 
         gap: 10px;
     }

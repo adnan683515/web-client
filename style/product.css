@@ -9,7 +9,6 @@
     position: absolute;
     width: 15%;
     transform: rotate(180deg);
-
     transform:  translate(-80%,-80%);
     z-index: -1;
 }
