@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="style/navber.css">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/Club.css">
+    <link rel="stylesheet" href="style/Footer.css">
+
+    <!-- popins font -->
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        .tasa {
+            font-family: "TASA Orbiter", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="tasa">
+
+
+
+
+    <header>
+        <!-- navber -->
+        <div>
+            <div class="navHeading mainContainer tasa paddingContainer">
+
+
+                <div class="navSearchBox">
+
+                    <svg class="searchicon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none">
+                        <g opacity="0.5">
+                            <path
+                                d="M15.5 14H14.71L14.43 13.73C15.444 12.5541 16.0012 11.0527 16 9.5C16 8.21442 15.6188 6.95772 14.9046 5.8888C14.1903 4.81988 13.1752 3.98676 11.9874 3.49479C10.7997 3.00282 9.49279 2.87409 8.23192 3.1249C6.97104 3.3757 5.81285 3.99477 4.90381 4.90381C3.99477 5.81285 3.3757 6.97104 3.1249 8.23192C2.87409 9.49279 3.00282 10.7997 3.49479 11.9874C3.98676 13.1752 4.81988 14.1903 5.8888 14.9046C6.95772 15.6188 8.21442 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                                fill="#262626" />
+                        </g>
+                    </svg>
+
+                    <input class="searchInput" placeholder="Find  what you need.." type="text" name="" id="">
+
+
+                </div>
+
+
+
+                <div>
+                    <div class="">
+                        <h2 class="logo">Logo</h2>
+                    </div>
+                </div>
+
+
+                <div>
+
+                    <div class="navHeadingrightBox">
+                        <button class="signIn">Sign in</button>
+                        <button class="singUp">Sign up</button>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                            <path
+                                d="M5.70371 4.56289C5.40117 4.56289 5.11103 4.68307 4.8971 4.897C4.68317 5.11093 4.56299 5.40107 4.56299 5.70361C4.56299 6.00615 4.68317 6.2963 4.8971 6.51022C5.11103 6.72415 5.40117 6.84434 5.70371 6.84434H6.26495C6.51265 6.84476 6.75347 6.92581 6.95104 7.07521C7.14861 7.22462 7.29217 7.43428 7.36004 7.6725L10.9784 20.3345C11.1831 21.0491 11.6148 21.6776 12.2083 22.125C12.8019 22.5724 13.525 22.8144 14.2683 22.8145H24.6922C25.3763 22.8146 26.0447 22.6097 26.6112 22.2262C27.1777 21.8427 27.6162 21.2982 27.8702 20.6631L31.2331 12.2536C31.3713 11.9076 31.4227 11.533 31.3827 11.1625C31.3428 10.792 31.2127 10.437 31.0038 10.1284C30.7949 9.8198 30.5136 9.56707 30.1845 9.3923C29.8554 9.21752 29.4885 9.12602 29.1159 9.12578H10.148L9.55251 7.0451C9.34838 6.33049 8.91716 5.70176 8.32404 5.25393C7.73092 4.80611 7.00814 4.56354 6.26495 4.56289H5.70371ZM13.1732 19.7048L10.8005 11.4072H29.1159L25.7508 19.8166C25.666 20.0281 25.5199 20.2093 25.3312 20.337C25.1426 20.4647 24.92 20.533 24.6922 20.533H14.2683C14.0206 20.5326 13.7797 20.4515 13.5822 20.3021C13.3846 20.1527 13.241 19.9431 13.1732 19.7048ZM14.8295 31.9402C15.2789 31.9402 15.7239 31.8517 16.1391 31.6797C16.5543 31.5078 16.9316 31.2557 17.2493 30.9379C17.5671 30.6201 17.8192 30.2429 17.9912 29.8277C18.1631 29.4125 18.2517 28.9675 18.2517 28.5181C18.2517 28.0687 18.1631 27.6237 17.9912 27.2085C17.8192 26.7933 17.5671 26.416 17.2493 26.0982C16.9316 25.7805 16.5543 25.5284 16.1391 25.3564C15.7239 25.1844 15.2789 25.0959 14.8295 25.0959C13.9219 25.0959 13.0514 25.4565 12.4097 26.0982C11.7679 26.74 11.4073 27.6105 11.4073 28.5181C11.4073 29.4257 11.7679 30.2961 12.4097 30.9379C13.0514 31.5797 13.9219 31.9402 14.8295 31.9402ZM14.8295 29.6588C14.527 29.6588 14.2368 29.5386 14.0229 29.3247C13.809 29.1108 13.6888 28.8206 13.6888 28.5181C13.6888 28.2155 13.809 27.9254 14.0229 27.7115C14.2368 27.4975 14.527 27.3773 14.8295 27.3773C15.132 27.3773 15.4222 27.4975 15.6361 27.7115C15.85 27.9254 15.9702 28.2155 15.9702 28.5181C15.9702 28.8206 15.85 29.1108 15.6361 29.3247C15.4222 29.5386 15.132 29.6588 14.8295 29.6588ZM23.9553 31.9402C24.4047 31.9402 24.8497 31.8517 25.2649 31.6797C25.6801 31.5078 26.0573 31.2557 26.3751 30.9379C26.6929 30.6201 26.945 30.2429 27.1169 29.8277C27.2889 29.4125 27.3774 28.9675 27.3774 28.5181C27.3774 28.0687 27.2889 27.6237 27.1169 27.2085C26.945 26.7933 26.6929 26.416 26.3751 26.0982C26.0573 25.7805 25.6801 25.5284 25.2649 25.3564C24.8497 25.1844 24.4047 25.0959 23.9553 25.0959C23.0477 25.0959 22.1772 25.4565 21.5354 26.0982C20.8937 26.74 20.5331 27.6105 20.5331 28.5181C20.5331 29.4257 20.8937 30.2961 21.5354 30.9379C22.1772 31.5797 23.0477 31.9402 23.9553 31.9402ZM23.9553 29.6588C23.6527 29.6588 23.3626 29.5386 23.1487 29.3247C22.9347 29.1108 22.8145 28.8206 22.8145 28.5181C22.8145 28.2155 22.9347 27.9254 23.1487 27.7115C23.3626 27.4975 23.6527 27.3773 23.9553 27.3773C24.2578 27.3773 24.548 27.4975 24.7619 27.7115C24.9758 27.9254 25.096 28.2155 25.096 28.5181C25.096 28.8206 24.9758 29.1108 24.7619 29.3247C24.548 29.5386 24.2578 29.6588 23.9553 29.6588Z"
+                                fill="#262626" />
+                        </svg>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- sub heading -->
+
+            <div class="subHeading">
+
+
+                <div class="menuBox">
+
+                    <div class="menuBox">
+
+                        <a href="shop.html">Shop</a>
+                        <a>Reviews</a>
+                        <a href="theClub.html">The Club</a>
+                        <p>FAQ</p>
+                        <p>About</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+
+    <body>
+
+
+
+        <!-- hero -->
+        <section class="clubSection">
+            <div class="club-container mainContainer paddingContainer">
+
+                <div class="dog-img-wrapper left-dog">
+                    <img src="assets/ClubPage/rightSidehero.png" alt="German Shepherd">
+                </div>
+
+                <div class="club-content">
+                    <h2>Join The Muttamins Club</h2>
+                    <p>Exclusive perks, expert advice, and a community that celebrates your dog's wellness journey.</p>
+                </div>
+
+                <div class="dog-img-wrapper right-dog">
+                    <img class="Puppy" src="assets/ClubPage/leftSidehero.png" alt="Beagle Puppy">
+                    <img class="kuppy" src="assets/ClubPage/herobidal2.png" alt="">
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- benifits seciton -->
+        <div class="benifits_wrapper">
+            <section class="benefits-section mainContainer paddingContainer ">
+                <h2 class="section-title">Member Benefits</h2>
+
+                <div class="benefits-grid-container">
+
+                    <div class="benefit-card">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                fill="none">
+                                <rect width="80" height="80" rx="40" fill="#A5E9F1" />
+                                <path
+                                    d="M25.7764 39.1111V53.3333C25.7764 54.2763 26.151 55.1807 26.8178 55.8475C27.4846 56.5143 28.3889 56.8889 29.3319 56.8889H50.6653C51.6082 56.8889 52.5126 56.5143 53.1794 55.8475C53.8462 55.1807 54.2208 54.2763 54.2208 53.3333V39.1111"
+                                    stroke="#262626" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M39.9967 29.3333C39.9967 27.6831 39.3412 26.1004 38.1743 24.9335C37.0074 23.7666 35.4248 23.1111 33.7745 23.1111C32.5958 23.1111 31.4653 23.5793 30.6318 24.4128C29.7983 25.2463 29.3301 26.3768 29.3301 27.5555C29.3301 28.7343 29.7983 29.8647 30.6318 30.6982C31.4653 31.5317 32.5958 32 33.7745 32H39.9967M39.9967 29.3333V32M39.9967 29.3333C39.9967 27.6831 40.6523 26.1004 41.8192 24.9335C42.9861 23.7666 44.5687 23.1111 46.219 23.1111C47.3977 23.1111 48.5282 23.5793 49.3617 24.4128C50.1952 25.2463 50.6634 26.3768 50.6634 27.5555C50.6634 28.1392 50.5485 28.7171 50.3251 29.2564C50.1017 29.7956 49.7744 30.2855 49.3617 30.6982C48.949 31.1109 48.459 31.4383 47.9198 31.6617C47.3806 31.885 46.8026 32 46.219 32H39.9967"
+                                    stroke="#262626" stroke-width="3" stroke-linejoin="round" />
+                                <path d="M40 39.1111V56.8889M24 32H56V39.1111H24V32Z" stroke="#262626" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>15% Off Every Order</h3>
+                        <p>Exclusive member pricing on all products, all the time. No codes needed.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                fill="none">
+                                <rect width="80" height="80" rx="40" fill="#A5E9F1" />
+                                <path
+                                    d="M46.2227 50.7368C46.2227 51.5593 46.0617 52.3738 45.749 53.1336C45.4362 53.8935 44.9778 54.584 44.4 55.1656C43.8221 55.7472 43.136 56.2085 42.381 56.5232C41.626 56.838 40.8167 57 39.9995 57C39.1822 57 38.373 56.838 37.618 56.5232C36.8629 56.2085 36.1769 55.7472 35.599 55.1656C35.0211 54.584 34.5627 53.8935 34.25 53.1336C33.9372 52.3738 33.7763 51.5593 33.7763 50.7368M52.8567 50.7368H27.1441C26.5221 50.7366 25.9141 50.5507 25.397 50.2027C24.8799 49.8548 24.477 49.3603 24.2391 48.7819C24.0012 48.2035 23.9391 47.5671 24.0606 46.9531C24.182 46.3392 24.4816 45.7752 24.9215 45.3326L25.9919 44.2536C26.9917 43.2467 27.5532 41.8815 27.553 40.4581V35.5263C27.553 32.2041 28.8643 29.018 31.1985 26.6689C33.5327 24.3197 36.6985 23 39.9995 23C43.3005 23 46.4663 24.3197 48.8004 26.6689C51.1346 29.018 52.4459 32.2041 52.4459 35.5263V40.4581C52.4462 41.8818 53.0084 43.247 54.0088 44.2536L55.081 45.3326C55.52 45.7756 55.8189 46.3394 55.9398 46.9531C56.0608 47.5668 55.9985 48.2027 55.7607 48.7808C55.523 49.3589 55.1205 49.8531 54.604 50.2013C54.0875 50.5494 53.4783 50.7357 52.8567 50.7368Z"
+                                    stroke="#262626" stroke-width="3.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Early Access</h3>
+                        <p>Be the first to know about new products and special promotions.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                fill="none">
+                                <rect width="80" height="80" rx="40" fill="#A5E9F1" />
+                                <path
+                                    d="M25.2 55C24.1825 55 23.3118 54.6331 22.5878 53.8994C21.8638 53.1656 21.5012 52.2825 21.5 51.25V28.75C21.5 27.7187 21.8626 26.8362 22.5878 26.1025C23.313 25.3687 24.1837 25.0012 25.2 25H54.8C55.8175 25 56.6888 25.3675 57.414 26.1025C58.1392 26.8375 58.5012 27.72 58.5 28.75V51.25C58.5 52.2812 58.138 53.1644 57.414 53.8994C56.6901 54.6344 55.8187 55.0012 54.8 55H25.2ZM40 41.875L25.2 32.5V51.25H54.8V32.5L40 41.875ZM40 38.125L54.8 28.75H25.2L40 38.125ZM25.2 32.5V28.75V51.25V32.5Z"
+                                    fill="#262626" />
+                            </svg>
+                        </div>
+                        <h3>Expert Tips</h3>
+                        <p>Monthly wellness guides from our team of veterinarians.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                fill="none">
+                                <rect width="80" height="80" rx="40" fill="#A5E9F1" />
+                                <path
+                                    d="M44.5 31H53.5C55.0913 31 56.6174 31.6321 57.7426 32.7573C58.8679 33.8825 59.5 35.4087 59.5 37V48.9999H55M23.5 48.9999H20.5V28C20.5 27.2043 20.8161 26.4413 21.3787 25.8787C21.9413 25.3161 22.7044 25 23.5 25H41.5C42.2956 25 43.0587 25.3161 43.6213 25.8787C44.1839 26.4413 44.5 27.2043 44.5 28V48.9999M43 48.9999H35.5"
+                                    stroke="#2B2B2B" stroke-width="3.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M49.752 55.0001C48.3596 55.0001 47.0242 54.447 46.0396 53.4624C45.0551 52.4778 44.502 51.1425 44.502 49.7501C44.502 48.3577 45.0551 47.0224 46.0396 46.0378C47.0242 45.0532 48.3596 44.5001 49.752 44.5001C51.1443 44.5001 52.4797 45.0532 53.4643 46.0378C54.4488 47.0224 55.002 48.3577 55.002 49.7501C55.002 51.1425 54.4488 52.4778 53.4643 53.4624C52.4797 54.447 51.1443 55.0001 49.752 55.0001ZM29.502 55.0001C28.1096 55.0001 26.7742 54.447 25.7896 53.4624C24.8051 52.4778 24.252 51.1425 24.252 49.7501C24.252 48.3577 24.8051 47.0224 25.7896 46.0378C26.7742 45.0532 28.1096 44.5001 29.502 44.5001C30.8943 44.5001 32.2297 45.0532 33.2143 46.0378C34.1988 47.0224 34.752 48.3577 34.752 49.7501C34.752 51.1425 34.1988 52.4778 33.2143 53.4624C32.2297 54.447 30.8943 55.0001 29.502 55.0001Z"
+                                    stroke="#2B2B2B" stroke-width="3.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Free Shipping</h3>
+                        <p>Complimentary shipping on orders over $50, right to your door.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                fill="none">
+                                <rect width="80" height="80" rx="40" fill="#A5E9F1" />
+                                <path
+                                    d="M49.75 36.1C51.115 34.735 53.0455 36.1 54.625 36.1C55.9179 36.1 57.1579 35.5864 58.0721 34.6721C58.9864 33.7579 59.5 32.5179 59.5 31.225C59.5 29.9321 58.9864 28.6921 58.0721 27.7779C57.1579 26.8636 55.9179 26.35 54.625 26.35C54.3664 26.35 54.1184 26.2473 53.9356 26.0644C53.7527 25.8816 53.65 25.6336 53.65 25.375C53.65 24.0821 53.1364 22.8421 52.2221 21.9279C51.3079 21.0136 50.0679 20.5 48.775 20.5C47.4821 20.5 46.2421 21.0136 45.3279 21.9279C44.4136 22.8421 43.9 24.0821 43.9 25.375C43.9 26.9545 45.265 28.885 43.9 30.25L30.25 43.9C28.885 45.265 26.9545 43.9 25.375 43.9C24.0821 43.9 22.8421 44.4136 21.9279 45.3279C21.0136 46.2421 20.5 47.4821 20.5 48.775C20.5 50.0679 21.0136 51.3079 21.9279 52.2221C22.8421 53.1364 24.0821 53.65 25.375 53.65C25.921 53.65 26.35 54.079 26.35 54.625C26.35 55.9179 26.8636 57.1579 27.7779 58.0721C28.6921 58.9864 29.9321 59.5 31.225 59.5C32.5179 59.5 33.7579 58.9864 34.6721 58.0721C35.5864 57.1579 36.1 55.9179 36.1 54.625C36.1 53.0455 34.735 51.115 36.1 49.75L49.75 36.1Z"
+                                    stroke="#2B2B2B" stroke-width="3.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Birthday Treats</h3>
+                        <p>Special surprises for your pup on their birthday. Just because.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                fill="none">
+                                <rect width="80" height="80" rx="40" fill="#A5E9F1" />
+                                <path
+                                    d="M25.0667 34.6667H54.9333M25.0667 45.3333H54.9333M24 40C24 42.1011 24.4139 44.1817 25.2179 46.1229C26.022 48.0641 27.2006 49.828 28.6863 51.3137C30.172 52.7994 31.9359 53.978 33.8771 54.7821C35.8183 55.5861 37.8988 56 40 56C42.1011 56 44.1817 55.5861 46.1229 54.7821C48.0641 53.978 49.828 52.7994 51.3137 51.3137C52.7994 49.828 53.978 48.0641 54.7821 46.1229C55.5861 44.1817 56 42.1011 56 40C56 35.7565 54.3143 31.6869 51.3137 28.6863C48.3131 25.6857 44.2435 24 40 24C35.7565 24 31.6869 25.6857 28.6863 28.6863C25.6857 31.6869 24 35.7565 24 40Z"
+                                    stroke="#262626" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M39.1091 24C36.1142 28.7993 34.5264 34.3429 34.5264 40C34.5264 45.6571 36.1142 51.2007 39.1091 56M40.8869 24C43.8818 28.7993 45.4696 34.3429 45.4696 40C45.4696 45.6571 43.8818 51.2007 40.8869 56"
+                                    stroke="#262626" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Community Access</h3>
+                        <p>Join our private community of pet parents who care about wellness.</p>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <img class="benifits_leg" src="assets/hero/left.png" alt="">
+        </div>
+
+
+        <!-- become a member -->
+        <div class="form-page-wrapper">
+            <div class="member-form-container">
+
+                <h2 class="form-title">Become a Member</h2>
+                <p class="form-subtitle">Join thousands of pet parents who prioritize their dog's wellness</p>
+
+                <form class="member-form">
+
+                    <div class="input-fields-wrapper">
+
+                        <div class="form-group">
+                            <label for="your-name">Your Name</label>
+                            <input type="text" id="your-name" name="your-name" placeholder="Enter Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="your-email">Your Email</label>
+                            <input type="email" id="your-email" name="your-email" placeholder="youremail@gmail.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dog-name">Your Dog's Name</label>
+                            <input type="text" id="dog-name" name="dog-name" placeholder="Enter Your Dog's Name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dog-breed">Breed (optional)</label>
+                            <input type="text" id="dog-breed" name="dog-breed" placeholder="Golden Retriever">
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="submit-button">Join The Club</button>
+
+                </form>
+            </div>
+
+            <img class="form_biral_leg" src="assets/hero/rgith.png" alt="">
+        </div>
+
+
+
+
+        <!-- membar say -->
+        <div class="membarSayContainer">
+
+            <div class="memberSay-sectionWrapper mainContainer ">
+
+
+                <h2 class="memberSay-title">What our Member Say</h2>
+
+
+
+                <div class="memberSay-container">
+                    <div class="memberSay-card">
+                        <div class="memberSay-profile" style="background-image: url('human1.png');"></div>
+                        <h3 class="memberSay-name">Sarah Mitchell</h3>
+                        <div class="memberSay-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="memberSay-text">"My dog's energy is back! After using the supplements for just two
+                            weeks,
+                            I noticed a huge improvement in my Labrador's energy and coat shine...."</p>
+                    </div>
+
+
+                    <div class="memberSay-card">
+                        <div class="memberSay-profile" style="background-image: url('human2.png');"></div>
+                        <h3 class="memberSay-name">James Carter</h3>
+                        <div class="memberSay-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star-empty">&#9733;</span>
+                        </div>
+                        <p class="memberSay-text">My senior Golden Retriever was struggling to get up the stairs, but
+                            these
+                            mobility chews worked wonders. He's moving easier, playing more, and seems so much happier.
+                        </p>
+                    </div>
+
+
+                    <div class="memberSay-card">
+                        <div class="memberSay-profile" style="background-image: url('female.png');"></div>
+                        <h3 class="memberSay-name">Emily Rodriguez</h3>
+                        <div class="memberSay-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star-empty">&#9733;</span>
+                        </div>
+                        <p class="memberSay-text">Our pup used to get anxious during thunderstorms, but the calming
+                            treats
+                            have been a lifesaver. She sleeps peacefully now and feels so much more secure.</p>
+                    </div>
+                </div>
+                </section>
+            </div>
+
+            <img class="membar_biral_leg" src="assets/hero/left.png" alt="">
+
+        </div>
+
+
+    </body>
+
+
+
+
+    <footer>
+        <div class="footer-container mainContainer paddingContainer">
+
+            <!-- Column 1 -->
+            <div class="footer-col footer-info">
+                <div class="footer-logo">Logo</div>
+                <p class="tagline-text">
+                    Premium medicines and supplements for dogs.
+                    Made with love, trusted by vets, trusted by thousands.
+                </p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col link-group">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Supplements</a></li>
+                    <li><a href="#">Treats</a></li>
+                    <li><a href="#">Wellness</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col link-group">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping INFO</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col contact-group">
+                <h4>Contact Us</h4>
+
+                <div class="contact-item">
+                    <span class="icon">&#9992;</span>
+                    <p class="address">248 Main Street, Springfield, 07080 00000</p>
+                </div>
+
+                <div class="contact-item">
+                    <span class="icon">&#9742;</span>
+                    <p>Call Us<br>+880 23 123 456</p>
+                </div>
+
+                <div class="contact-item">
+                    <span class="icon">&#9993;</span>
+                    <p>Email<br>muttaminsandsupply@mail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright">
+            &copy; 2029 Muttamins. All rights reserved.
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,637 @@
+.clubSection {
+    background-color: #EADFD6;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+
+.club-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.club-content {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 752px;
+    z-index: 10;
+}
+
+.club-content h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.club-content p {
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+    max-width: 69%;
+    margin: auto;
+}
+
+
+.dog-img-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.dog-img-wrapper img {
+    display: block;
+    height: auto;
+
+}
+
+
+.left-dog img {
+    height: 334px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.right-dog {
+
+    position: relative;
+}
+
+.right-dog .kuppy {
+    width: 80%;
+    position: absolute;
+    transform: translate(-50%, -10%);
+
+}
+
+.right-dog .Puppy {
+
+    height: 380px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    z-index: 1;
+
+}
+
+
+@media screen and (min-width : 576px) and (max-width: 1024px) {
+
+    .clubSection {
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .club-container {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "text-area"
+            "dog-area";
+        gap: 30px;
+        justify-items: center;
+
+    }
+
+
+    .club-content {
+        grid-area: text-area;
+        margin-bottom: 0;
+    }
+
+    .left-dog {
+        order: 2;
+    }
+
+
+    .right-dog {
+        order: 3;
+    }
+
+
+    .club-content h2 {
+        font-size: 2rem;
+    }
+
+
+    .left-dog img {
+        height: 250px;
+
+    }
+
+    .right-dog .Puppy {
+        height: 200px;
+
+    }
+}
+
+
+@media (max-width: 576px) {
+    .club-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .club-container {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "text-area"
+            "dog-area";
+        gap: 20px;
+
+        justify-items: center;
+    }
+
+
+
+    .club-content p {
+
+        max-width: 100%;
+
+    }
+
+
+    .left-dog img {
+        height: 220px;
+    }
+
+    .right-dog .Puppy {
+        height: 180px;
+    }
+}
+
+
+
+
+/* --- Section Styling --- */
+.benefits-section {
+    padding: 50px 10px;
+    text-align: center;
+    background-color: #ffffff;
+
+}
+
+.benifits_wrapper {
+    position: relative;
+}
+
+.benifits_wrapper .benifits_leg {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 10%;
+
+
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+/* --- Grid Container Styling --- */
+.benefits-grid-container {
+    display: grid;
+    /* Desktop: 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+
+}
+
+/* --- Card Styling --- */
+.benefit-card {
+    background-color: #F3F1EE;
+    /* The light beige card color */
+    padding: 44px 15px;
+    max-width: 417px;
+    border-radius: 15px;
+    /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid #0E555D;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.benefit-card:hover {
+    /* Optional hover effect */
+    transform: translateY(-5px);
+}
+
+/* --- Icon Styling --- */
+.icon-wrapper {
+    width: 80px;
+    background-color: #91E4F1;
+    /* The light cyan circle color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-wrapper i {
+    font-size: 32px;
+    color: #1a1a1a;
+}
+
+/* --- Text Styling within Card --- */
+.benefit-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.benefit-card p {
+    font-size: 20px;
+    color: #555;
+    /* Slightly lighter text for description */
+    line-height: 1.6;
+    font-weight: 400;
+    /* Ensures text doesn't get too wide */
+}
+
+/* --- Responsive Design --- */
+
+/* Tablet View (max-width 900px) - Switch to 2 columns */
+@media (max-width: 900px) {
+    .benefits-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile View (max-width 600px) - Switch to 1 column */
+@media (max-width: 600px) {
+    .benefits-grid-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 30px;
+    }
+
+    .benefit-card {
+        padding: 30px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-page-wrapper {
+    position: relative;
+    background-color: #F3F1EE;
+    margin: 30px 0;
+
+    padding: 20px;
+}
+
+.form_biral_leg{
+    right: 0;
+    width: 10%;
+    top: 40%;
+    position: absolute;
+}
+
+.member-form-container {
+    background-color: white;
+    padding: 117px 64px;
+    border-radius: 8px;
+    max-width: 891px;
+    margin: 100px auto;
+
+}
+
+/* --- Typography --- */
+.form-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #5DD7E6;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+.form-subtitle {
+    font-size: 20px;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --- Input Grid/Flex Layout (Desktop) --- */
+.input-fields-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+    gap: 20px;
+    /* Spacing between rows and columns */
+    margin-bottom: 30px;
+}
+
+.form-group {
+    width: calc(50% - 10px);
+    /* Two columns (50% width minus half the gap) */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.form-group label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0E555D;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 13px 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.form-group input::placeholder {
+    color: #bbb;
+}
+
+/* --- Submit Button --- */
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    /* Dark background color */
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #1a1a1a;
+}
+
+/* --- Paw Background Element (Visual only) --- */
+.paw-bg-element {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 150px;
+    height: 150px;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23add8e6%22%20d%3D%22M256%20144c-35.3%200-64%2028.7-64%2064s28.7%2064%2064%2064%2064-28.7%2064-64-28.7-64-64-64zm0%20256c-61.9%200-112-50.1-112-112s50.1-112%20112-112%20112%2050.1%20112%20112-50.1%20112-112%20112zm-96-224c-26.5%200-48%2021.5-48%2048s21.5%2048%2048%2048%2048-21.5%2048-48-21.5-48-48-48z%22/%3E%3C/svg%3E');
+    /* Simplified Paw Icon (light blue) */
+    background-size: cover;
+    opacity: 0.2;
+    transform: rotate(20deg);
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* --- Responsive Breakpoint (Mobile: 650px এর নিচে ১ কলাম হবে) --- */
+@media (max-width: 650px) {
+
+    .member-form-container {
+        padding: 30px 20px;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    /* ** এখানে মেইন পরিবর্তন **
+    মোবাইলে পাশাপাশি না রেখে নিচে নিচে স্ট্যাক করে দিলাম (১ কলাম) 
+    */
+    .input-fields-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-group {
+        width: 100%;
+        /* প্রতিটি ইনপুট এখন সম্পূর্ণ প্রস্থ নেবে */
+    }
+
+    .paw-bg-element {
+        display: none;
+        /* মোবাইলে এই ডেকোরেশনটি বন্ধ করে দিলাম */
+    }
+}
+
+@media (max-width: 400px) {
+    .member-form-container {
+        padding: 20px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* membar say */
+.membarSayContainer {
+    position: relative;
+}
+
+.membar_biral_leg {
+    position: absolute;
+    width: 10%;
+    top: 0;
+    left: 0;
+}
+
+.memberSay-sectionWrapper {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.memberSay-tagline {
+    gap: 40px;
+    margin: 60px auto;
+
+}
+
+
+.memberSay-title {
+    font-size: 48px;
+    line-height: 68px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.memberSay-card {
+    background-color: #eaf8ff;
+    padding: 40px 20px 20px;
+    border-radius: 12px;
+    border: 1px solid #7ebce6;
+    text-align: center;
+    position: relative;
+
+}
+
+.memberSay-container {
+    display: flex;
+    gap: 83px;
+}
+
+.memberSay-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.memberSay-name {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.memberSay-rating {
+    color: #ffc107;
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+
+.star-empty {
+    color: #ccc;
+}
+
+
+.memberSay-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 992px) {
+    .memberSay-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .memberSay-title {
+        font-size: 28px;
+    }
+
+    .memberSay-sectionWrapper {
+        padding: 20px 0;
+
+        row-gap: 40px;
+    }
+
+    .form-page-wrapper {
+
+   
+    padding: 10px;
+}
+
+    .memberSay-container {
+        display: grid;
+        padding: 0 10px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 26px;
+    }
+
+    .membar_biral_leg {
+
+        width: 28%;
+
+    }
+
+    .memberSay-card {
+        margin-bottom: 20px;
+    }
+
+    .benifits_wrapper .benifits_leg {
+   
+    width: 25%;
+}
+    .form_biral_leg{
+        display: none;
+}
+}
