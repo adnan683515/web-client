@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+
+.menu-box a.active {
+    color: #A5E9F1;
+}
+
 /* --- Navigation Bar Styles (Desktop First) --- */
 
 .main-navbar {

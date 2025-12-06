@@ -19,7 +19,14 @@
     margin-top: 30px;
     margin-bottom: 150px;
     color: #2B2B2B;
+    position: relative;
 
+}
+
+.faq_hero_biral_leg {
+    position: absolute;
+    left: 0;
+    width: 10%;
 }
 
 .title_of_faq div {
@@ -46,9 +53,20 @@
         margin-bottom: 50px;
     }
 
+    .faq_hero_biral_leg {
+        position: absolute;
+        left: 0;
+        width: 10%;
+    }
+
 }
 
 @media screen and (max-width : 576px) {
+
+
+    .faq_hero_biral_leg {
+        display: none;
+    }
 
     .title_of_faq div {
 
@@ -123,6 +141,7 @@
 }
 
 
+
 .faq-question {
     display: flex;
     justify-content: space-between;
@@ -139,6 +158,10 @@
 .faq_wrapper .faq_products_box {
     display: flex;
     justify-content: center;
+
+}
+
+.faq_wrapper .faq_products_box h1 {
     font-size: 38px;
 }
 
@@ -216,6 +239,11 @@
 
 @media (max-width: 576px) {
 
+    .faq_wrapper .faq_products_box h1 {
+        font-size: 28px;
+    }
+
+
     .AllFAQcontainer {
         padding: 20px 5px;
         row-gap: 10px;
@@ -276,6 +304,8 @@
 .oderFaqContainer {
     margin: 40px auto;
     border-radius: 8px;
+
+
 }
 
 .oderFaqItemContainer {
@@ -289,6 +319,7 @@
     padding: 32px 20px;
     background-color: #EDFBFC;
     border-radius: 10px;
+
 }
 
 .oderFaqItem:last-child {
