@@ -51,6 +51,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
 }
 
 .dog-img-wrapper img {
@@ -67,13 +68,13 @@
 }
 
 .right-dog {
-
     position: relative;
 }
 
 .right-dog .kuppy {
     width: 80%;
     position: absolute;
+
     transform: translate(-50%, -10%);
 
 }
