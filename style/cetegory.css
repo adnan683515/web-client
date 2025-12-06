@@ -4,7 +4,7 @@
     align-items: center;
     margin-top: 100px;
     margin-bottom: 50px;
- 
+
 }
 
 .shop-cetegory-wrapper .cetegory-box {
@@ -22,7 +22,7 @@
     gap: 50px;
 }
 
-.shop-cetegory-wrapper .cetegory-box .cetegory-item-box .item  {
+.shop-cetegory-wrapper .cetegory-box .cetegory-item-box .item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,14 +37,40 @@
     color: #000000;
 }
 
+.product_title_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.product_title_name h1 {
+    font-size: 48px;
+}
+
+.product_title_biral_leg_right {
+    position: absolute;
+    right: 0;
+    bottom: -10;
+
+    width: 10%;
+}
+
 
 @media screen and (max-width : 576px) {
+
+    .product_title_name h1 {
+        font-size: 26px;
+    }
 
     .shop-cetegory-wrapper {
         margin: 20px 50px;
     }
 
-
+    .product_title_biral_leg_right {
+        display: none;
+    }
 
 
     .shop-cetegory-wrapper .cetegory-box {
@@ -67,7 +93,7 @@
     }
 
 
-    .shop-cetegory-wrapper .cetegory-box .cetegory-item-box .item  p {
+    .shop-cetegory-wrapper .cetegory-box .cetegory-item-box .item p {
         row-gap: 5px;
         font-size: 12px;
         font-weight: 600;

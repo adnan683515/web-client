@@ -9,15 +9,20 @@
     min-height: 500px;
     height: 78vh;
     width: 100%;
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 100px;
-
     overflow: hidden;
 }
 
+.aboutSection .about_hero_biral_leg {
+    position: absolute;
+    width: 10%;
+    bottom: -40px;
+    left: 0;
+    z-index: -1;
+}
 
 .aboutSection .aboutHeroIMage {
 
@@ -50,18 +55,21 @@
 }
 
 .about-title {
-    font-size: 2.5rem;
+    font-size: 64px;
     font-weight: 700;
 }
 
 .about-text {
-    font-size: 1rem;
+    font-size: 24px;
     line-height: 1.6;
 }
 
 
 
 @media screen and (max-width : 576px) {
+    .aboutSection .about_hero_biral_leg {
+        display: none;
+    }
 
     .aboutSection {
         min-height: 400px;
@@ -275,10 +283,9 @@
     color: #1a1a1a;
 }
 
-/* --- Main Grid Layout --- */
+
 .mission-grid-container {
     display: grid;
-    /* Desktop: Two columns, ratio 1fr (Text) and 1.2fr (Image) */
     grid-template-columns: 1fr 1.2fr;
     gap: 50px;
 
@@ -287,14 +294,13 @@
     text-align: left;
 }
 
-/* --- Values List Styling --- */
+
 .mission-values-list {
     display: flex;
     flex-direction: column;
     gap: 30px;
     max-width: 461px;
     padding-right: 20px;
-    /* Space between text and image */
 }
 
 .value-item {
@@ -306,7 +312,6 @@
     flex-shrink: 0;
     font-size: 1.5rem;
     color: #4CAF50;
-    /* A pleasant color for icons */
     padding-top: 5px;
 }
 
@@ -323,7 +328,7 @@
     line-height: 1.5;
 }
 
-/* --- Image Styling --- */
+
 
 .mission-image-wrapper {
     max-width: 750px;
@@ -337,15 +342,13 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Paw Decoration (Bottom Left) --- */
+
 .paw-decoration-left {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 150px;
     height: 150px;
-
-    /* Using a radial gradient to simulate the soft paw pattern */
     background: radial-gradient(circle at 70% 30%, #add8e6 15%, transparent 15%),
         radial-gradient(circle at 30% 70%, #add8e6 15%, transparent 15%),
         radial-gradient(circle at 50% 50%, #add8e6 20%, transparent 20%);
@@ -356,18 +359,17 @@
     transform: translate(-50%, 50%);
 }
 
-/* --- Responsive Design --- */
 
-/* Tablet View (max-width 900px) - Adjust ratio */
+
+
 @media (max-width: 900px) {
     .mission-grid-container {
-        /* Equal columns for better use of space */
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
 }
 
-/* Mobile View (max-width 650px) - Switch to 1 column Grid (Text on top, Image bottom) */
+
 @media (max-width: 576px) {
     .mission-grid-container {
         grid-template-columns: 1fr;
@@ -381,7 +383,7 @@
         color: #0E555D;
     }
 
-    /* Set order for mobile view */
+
     .mission-values-list {
         order: 1;
         padding-right: 0;
@@ -395,20 +397,20 @@
         font-size: 2rem;
     }
 
-    /* Center text items on mobile */
+
     .value-item {
-        /* Change from flex to grid for better centering of the icon/text block */
+
         display: grid;
         grid-template-columns: 40px 1fr;
     }
 
     .paw-decoration-left {
         display: none;
-        /* Hide complex decoration on small screen */
+  
     }
 }
 
-/* Very Small Mobile Adjustments */
+
 @media (max-width: 480px) {
     .mission-title {
         font-size: 1.75rem;
@@ -416,7 +418,7 @@
 
     .value-item {
         grid-template-columns: 1fr;
-        /* Stack icon and text block */
+
         text-align: center;
     }
 
@@ -457,7 +459,7 @@
     color: #1a1a1a;
 }
 
-/* Grid Layout (Image Left - Text Right) */
+
 .makeUsSection-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -466,7 +468,7 @@
     text-align: left;
 }
 
-/* Values List */
+
 .makeUsSection-values {
     display: flex;
     max-width: 557px;
@@ -497,7 +499,7 @@
     line-height: 1.5;
 }
 
-/* Image */
+
 .makeUsSection-image {
     max-width: 750px;
 
@@ -510,7 +512,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Paw Decoration */
+
 .makeUsSection-pawDecoration {
     position: absolute;
     bottom: 0;
@@ -527,7 +529,7 @@
 
 
 
-/* Mobile */
+
 @media screen and (min-width : 576px) and (max-width: 1024px) {
     .makeUsSection-grid {
         grid-template-columns: 1fr;
@@ -563,7 +565,6 @@
     }
 }
 
-/* Small Mobile */
 @media (max-width: 576px) {
 
     .makeUsSection-item {
@@ -585,9 +586,9 @@
 
 
     .makeUsSection-grid {
-  
-    grid-template-columns: repeat(1,1fr);
-    gap: 30px;
- 
-}
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+
+    }
 }

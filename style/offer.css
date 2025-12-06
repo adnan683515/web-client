@@ -1,10 +1,25 @@
+.offerSectionContainer {
+
+    position: relative;
+}
+
+.offerSectionContainer .shop_biral_leg_hero {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 13%;
+    z-index: -1;
+}
+
+
+
 .offer-section-wrapper {
     display: flex;
     gap: 30px;
-    /* Space between the two offer cards */
     flex-wrap: wrap;
     justify-content: center;
     margin: 4% auto;
+
 }
 
 
@@ -100,11 +115,14 @@
 }
 
 
-.shopMenu , .supplements{
+.shopMenu,
+.supplements {
     color: #188D9B;
 }
+
 .supplements svg path {
-    fill: #188D9B; /* Changes the SVG color */
+    fill: #188D9B;
+    /* Changes the SVG color */
 }
 
 .arrow-icon {
@@ -131,7 +149,7 @@
 
 }
 
-.learnMore{
+.learnMore {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,6 +189,11 @@
 }
 
 @media (max-width: 576px) {
+
+    .offerSectionContainer .shop_biral_leg_hero {
+        display: none;
+    }
+
     .offer-content {
         text-align: center;
 
@@ -219,7 +242,7 @@
     }
 
     .offer-container {
-     row-gap: 10%;
+        row-gap: 10%;
         flex-direction: column;
     }
 
