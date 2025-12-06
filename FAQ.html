@@ -1,11 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FAQ</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style/navber.css">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/FAQ.css">
+    <link rel="stylesheet" href="style/Footer.css">
+
+    <!-- popins font -->
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        .tasa {
+            font-family: "TASA Orbiter", sans-serif;
+        }
+    </style>
+
+
+
 </head>
-<body>
-    
+
+<body class="tasa">
+
+
+    <header>
+        <div>
+
+            <div class="main-navbar mainContainer">
+
+
+                <div class="nav-logo">
+                    <a href="#" class="logo-text">BrandLogo</a>
+                </div>
+
+
+                <div class="nav-search-box">
+                    <svg class="searchicon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none">
+                        <g opacity="0.5">
+                            <path
+                                d="M15.5 14H14.71L14.43 13.73C15.444 12.5541 16.0012 11.0527 16 9.5C16 8.21442 15.6188 6.95772 14.9046 5.8888C14.1903 4.81988 13.1752 3.98676 11.9874 3.49479C10.7997 3.00282 9.49279 2.87409 8.23192 3.1249C6.97104 3.3757 5.81285 3.99477 4.90381 4.90381C3.99477 5.81285 3.3757 6.97104 3.1249 8.23192C2.87409 9.49279 3.00282 10.7997 3.49479 11.9874C3.98676 13.1752 4.81988 14.1903 5.8888 14.9046C6.95772 15.6188 8.21442 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                                fill="#262626" />
+                        </g>
+                    </svg>
+
+                    <input class="search-input" placeholder="Find what you need..." type="text" name="" id="">
+
+                </div>
+
+
+                <div class="nav-right-box">
+                    <button class="sign-in">Sign in</button>
+                    <button class="sign-up">Sign up</button>
+
+                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37"
+                        fill="none">
+                        <path
+                            d="M5.70371 4.56289C5.40117 4.56289 5.11103 4.68307 4.8971 4.897C4.68317 5.11093 4.56299 5.40107 4.56299 5.70361C4.56299 6.00615 4.68317 6.2963 4.8971 6.51022C5.11103 6.72415 5.40117 6.84434 5.70371 6.84434H6.26495C6.51265 6.84476 6.75347 6.92581 6.95104 7.07521C7.14861 7.22462 7.29217 7.43428 7.36004 7.6725L10.9784 20.3345C11.1831 21.0491 11.6148 21.6776 12.2083 22.125C12.8019 22.5724 13.525 22.8144 14.2683 22.8145H24.6922C25.3763 22.8146 26.0447 22.6097 26.6112 22.2262C27.1777 21.8427 27.6162 21.2982 27.8702 20.6631L31.2331 12.2536C31.3713 11.9076 31.4227 11.533 31.3827 11.1625C31.3428 10.792 31.2127 10.437 31.0038 10.1284C30.7949 9.8198 30.5136 9.56707 30.1845 9.3923C29.8554 9.21752 29.4885 9.12602 29.1159 9.12578H10.148L9.55251 7.0451C9.34838 6.33049 8.91716 5.70176 8.32404 5.25393C7.73092 4.80611 7.00814 4.56354 6.26495 4.56289H5.70371ZM13.1732 19.7048L10.8005 11.4072H29.1159L25.7508 19.8166C25.666 20.0281 25.5199 20.2093 25.3312 20.337C25.1426 20.4647 24.92 20.533 24.6922 20.533H14.2683C14.0206 20.5326 13.7797 20.4515 13.5822 20.3021C13.3846 20.1527 13.241 19.9431 13.1732 19.7048ZM14.8295 31.9402C15.2789 31.9402 15.7239 31.8517 16.1391 31.6797C16.5543 31.5078 16.9316 31.2557 17.2493 30.9379C17.5671 30.6201 17.8192 30.2429 17.9912 29.8277C18.1631 29.4125 18.2517 28.9675 18.2517 28.5181C18.2517 28.0687 18.1631 27.6237 17.9912 27.2085C17.8192 26.7933 17.5671 26.416 17.2493 26.0982C16.9316 25.7805 16.5543 25.5284 16.1391 25.3564C15.7239 25.1844 15.2789 25.0959 14.8295 25.0959C13.9219 25.0959 13.0514 25.4565 12.4097 26.0982C11.7679 26.74 11.4073 27.6105 11.4073 28.5181C11.4073 29.4257 11.7679 30.2961 12.4097 30.9379C13.0514 31.5797 13.9219 31.9402 14.8295 31.9402ZM14.8295 29.6588C14.527 29.6588 14.2368 29.5386 14.0229 29.3247C13.809 29.1108 13.6888 28.8206 13.6888 28.5181C13.6888 28.2155 13.809 27.9254 14.0229 27.7115C14.2368 27.4975 14.527 27.3773 14.8295 27.3773C15.132 27.3773 15.4222 27.4975 15.6361 27.7115C15.85 27.9254 15.9702 28.2155 15.9702 28.5181C15.9702 28.8206 15.85 29.1108 15.6361 29.3247C15.4222 29.5386 15.132 29.6588 14.8295 29.6588ZM23.9553 31.9402C24.4047 31.9402 24.8497 31.8517 25.2649 31.6797C25.6801 31.5078 26.0573 31.2557 26.3751 30.9379C26.6929 30.6201 26.945 30.2429 27.1169 29.8277C27.2889 29.4125 27.3774 28.9675 27.3774 28.5181C27.3774 28.0687 27.2889 27.6237 27.1169 27.2085C26.945 26.7933 26.6929 26.416 26.3751 26.0982C26.0573 25.7805 25.6801 25.5284 25.2649 25.3564C24.8497 25.1844 24.4047 25.0959 23.9553 25.0959C23.0477 25.0959 22.1772 25.4565 21.5354 26.0982C20.8937 26.74 20.5331 27.6105 20.5331 28.5181C20.5331 29.4257 20.8937 30.2961 21.5354 30.9379C22.1772 31.5797 23.0477 31.9402 23.9553 31.9402ZM23.9553 29.6588C23.6527 29.6588 23.3626 29.5386 23.1487 29.3247C22.9347 29.1108 22.8145 28.8206 22.8145 28.5181C22.8145 28.2155 22.9347 27.9254 23.1487 27.7115C23.3626 27.4975 23.6527 27.3773 23.9553 27.3773C24.2578 27.3773 24.548 27.4975 24.7619 27.7115C24.9758 27.9254 25.096 28.2155 25.096 28.5181C25.096 28.8206 24.9758 29.1108 24.7619 29.3247C24.548 29.5386 24.2578 29.6588 23.9553 29.6588Z"
+                            fill="#262626" />
+                    </svg>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="sub-heading">
+                <div class="menu-box">
+                    <a href="shop.html">Shop</a>
+                    <a href="theClub.html">The Club</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="heroSectionBannarFAq">
+
+        <img src="assets/FAQ/faqHero.png" alt="">
+    </div>
+
+
+
+    <!-- title of faq -->
+
+    <div class="title_of_faq">
+
+        <div>
+            <h2>Frequently Asked Questions</h2>
+            <h4>Everything you need to know about Muttamins products and services</h4>
+        </div>
+    </div>
+
+
+    <div class="AllFAQcontainer">
+
+        <div class="faq_wrapper ">
+
+
+            <div class="faq_products_box">
+
+
+                <h1>Products & Ingredients</h1>
+
+            </div>
+            <section class="faq-container mainContainer">
+
+                <div class="faq_item_container">
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p>1. Are Muttamins products safe for all dog breeds?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Our supplements are formulated to be safe for all dog breeds and sizes. However, we
+                                always
+                                recommend consulting with your veterinarian before starting any new supplement regimen,
+                                especially
+                                if your dog has existing health conditions or is taking medications.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p>২. What ingredients do you use?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We use safe, vet-approved, high-quality ingredients to ensure the health, nutrition, and
+                                well-being of your pets.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p>3. Are your products third-party tested?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, our products are tested by trusted third-party labs to ensure safety, quality, and
+                                compliance with industry standards.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p>4. How long does one bottle last?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>One bottle typically lasts 30–60 days, depending on your pet’s size and daily usage.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- faq 2 -->
+
+        <div class="oderFaqSection">
+
+            <div class="oderFaqTitleBox">
+                <h1>Ordering & Shipping</h1>
+            </div>
+
+            <section class="oderFaqContainer mainContainer">
+
+                <div class="oderFaqItemContainer">
+
+                    <div class="oderFaqItem">
+                        <div class="oderFaqQuestion">
+                            <p>1. How long does shipping take?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="oderFaqAnswer">
+                            <p>Shipping typically takes 5–7 business days to reach most locations.
+                                Delivery times may vary depending on your area and any unforeseen delays.
+                                Once your order is shipped, you will receive a tracking number to monitor its progress.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="oderFaqItem">
+                        <div class="oderFaqQuestion">
+                            <p>2. What is your return policy?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="oderFaqAnswer">
+                            <p>We accept returns within 30 days of purchase.
+                                Products must be unused and in their original packaging.
+                                Once we receive your return, we’ll process a full refund or exchange as requested.</p>
+                        </div>
+                    </div>
+
+                    <div class="oderFaqItem">
+                        <div class="oderFaqQuestion">
+                            <p>3. Do you ship internationally?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="oderFaqAnswer">
+                            <p>Yes, we ship internationally to most countries.
+                                Shipping costs and delivery times vary depending on the destination.
+                                You will receive a tracking number once your order has been dispatched.</p>
+                        </div>
+                    </div>
+
+                    <div class="oderFaqItem">
+                        <div class="oderFaqQuestion">
+                            <p>4. Can I track my order?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="oderFaqAnswer">
+                            <p>Yes, you can track your order.
+                                Once your order is shipped, we’ll send you a tracking number via email.
+                                You can use this number to monitor your shipment’s progress online.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- faq 3 -->
+        <div class="oderFaqSection">
+
+            <div class="oderFaqTitleBox">
+                <h1>Usage & Dosage</h1>
+            </div>
+
+            <section class="oderFaqContainer mainContainer">
+
+                <div class="oderFaqItemContainer">
+
+                    <div class="oderFaqItem">
+                        <div class="oderFaqQuestion">
+                            <p>1. How do I know which supplement my dog needs?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="oderFaqAnswer">
+                            <p>The best way to determine which supplement your dog needs is to consult your
+                                veterinarian.
+                                They can evaluate your dog’s health, age, breed, and diet to recommend the right
+                                supplement.
+                                Always follow professional guidance before starting any new supplement regimen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="oderFaqItem">
+                        <div class="oderFaqQuestion">
+                            <p>2. Can I give my dog multiple supplements?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="oderFaqAnswer">
+                            <p>Yes, in many cases dogs can take multiple supplements, but it should be done carefully.
+                                Always consult your veterinarian to ensure the combination is safe and appropriate for
+                                your dog’s health.
+                                Follow the recommended dosages and guidance to avoid over-supplementing.</p>
+                        </div>
+                    </div>
+
+                    <div class="oderFaqItem">
+                        <div class="oderFaqQuestion">
+                            <p>3. When will I see results?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="oderFaqAnswer">
+                            <p>Results can vary depending on your dog’s age, health, and the supplement used.
+                                Some improvements may be noticed within a few weeks, while others may take 1–2 months.
+                                Consistency and following the recommended dosage are key to seeing the best results.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- faq 4 -->
+        <div class="oderFaqSection">
+
+            <div class="oderFaqTitleBox">
+                <h1>The Club Membership</h1>
+            </div>
+
+            <section class="oderFaqContainer mainContainer">
+
+                <div class="oderFaqItemContainer">
+
+                    <div class="oderFaqItem">
+                        <div class="oderFaqQuestion">
+                            <p>1. Is The Club membership free?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="oderFaqAnswer">
+                            <p>Yes, The Club membership is free to join.
+                                Members enjoy exclusive offers, early access to new products, and special promotions.
+                                Sign up is quick and gives you access to all member benefits immediately
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="oderFaqItem">
+                        <div class="oderFaqQuestion">
+                            <p>2. How do I get my member discount?</p>
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="oderFaqAnswer">
+                            <p>To get your member discount, first log in to your account.
+                                The discount will automatically apply at checkout for eligible products.
+                                If you encounter any issues, contact our support team for assistance.</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Still have questions? -->
+
+    <div class="haveQuestion">
+
+        <div class="textBox">
+            <div class="insideTExt">
+                <h1 class="still">Still have questions?</h1>
+
+                <p>Our customer care team is here to help. We typically respond within 24 hours.</p>
+
+            </div>
+            <div>
+                <button class="contactBtn">
+                    Contact Support
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-container mainContainer paddingContainer">
+
+            <!-- Column 1 -->
+            <div class="footer-col footer-info">
+                <div class="footer-logo">Logo</div>
+                <p class="tagline-text">
+                    Premium medicines and supplements for dogs.
+                    Made with love, trusted by vets, trusted by thousands.
+                </p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col link-group">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Supplements</a></li>
+                    <li><a href="#">Treats</a></li>
+                    <li><a href="#">Wellness</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col link-group">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping INFO</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col contact-group">
+                <h4>Contact Us</h4>
+
+                <div class="contact-item">
+                    <span class="icon">&#9992;</span>
+                    <p class="address">248 Main Street, Springfield, 07080 00000</p>
+                </div>
+
+                <div class="contact-item">
+                    <span class="icon">&#9742;</span>
+                    <p>+880 23 123 456</p>
+                </div>
+
+                <div class="contact-item">
+                    <span class="icon">&#9993;</span>
+                    <p>muttaminsandsupply@mail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright">
+            &copy; 2029 Muttamins. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/oderingFq.js"></script>
 </body>
+
 </html>
