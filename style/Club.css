@@ -1,6 +1,16 @@
+
+
+@font-face {
+    font-family: Lufga;
+    src: url('/LufgaRegular.ttf');
+}
+
+body {
+    font-family: Lufga;
+}
+
 .clubSection {
     background-color: #EADFD6;
-    font-family: 'Poppins', sans-serif;
     width: 100%;
 
     padding-top: 50px;
@@ -10,7 +20,6 @@
     align-items: flex-end;
     overflow: hidden;
 }
-
 
 .club-container {
     width: 100%;
@@ -331,7 +340,7 @@
     padding: 20px;
 }
 
-.form_biral_leg{
+.form_biral_leg {
     right: 0;
     width: 10%;
     top: 40%;
@@ -606,9 +615,9 @@
 
     .form-page-wrapper {
 
-   
-    padding: 10px;
-}
+
+        padding: 10px;
+    }
 
     .memberSay-container {
         display: grid;
@@ -628,10 +637,11 @@
     }
 
     .benifits_wrapper .benifits_leg {
-   
-    width: 25%;
-}
-    .form_biral_leg{
+
+        width: 25%;
+    }
+
+    .form_biral_leg {
         display: none;
-}
+    }
 }

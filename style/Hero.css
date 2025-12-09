@@ -1,4 +1,14 @@
 /* Container */
+
+@font-face {
+    font-family: Lufga;
+    src: url('/LufgaRegular.ttf');
+}
+
+body{
+    font-family: Lufga;
+}
+
 .hero-wrapper {
     display: flex;
     justify-content: space-between;
@@ -133,11 +143,11 @@
 @media screen and (max-width: 576px) {
 
     .hero-section .text-box {
-      
+
 
         align-items: center;
-  
-     
+
+
     }
 
     .hero-section .text-box .Premium {
@@ -149,6 +159,7 @@
     .hero-section .hero-wrapper .text-box .bandage {
         padding: 5px;
     }
+
     .hero-wrapper {
 
         flex-direction: column-reverse;

@@ -1,3 +1,14 @@
+
+@font-face {
+    font-family: Lufga;
+    src: url('/LufgaRegular.ttf');
+}
+
+body{
+    font-family: Lufga;
+}
+
+
 .heroSectionBannarFAq {
     display: block;
     width: 100%;

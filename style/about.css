@@ -4,6 +4,16 @@
 }
 
 
+@font-face {
+    font-family: Lufga;
+    src: url('/LufgaRegular.ttf');
+}
+
+body{
+    font-family: Lufga;
+}
+
+
 .aboutSection {
     position: relative;
     min-height: 500px;
