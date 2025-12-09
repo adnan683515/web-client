@@ -1,8 +1,15 @@
+
+@font-face {
+    font-family: Lufga;
+    src: url('/LufgaRegular.ttf');
+}
+
 .why_choose_section {
 
     background-color: #F3F1EE;
     padding: 86px 0;
     margin: 90px 0;
+    font-family: Lufga;
 }
 
 .why_box {
@@ -108,8 +115,13 @@
 }
 
 
+.petCare_buttonBox button{
+    font-family: Lufga;
+}
 
-
+.petCare_shopAllBtn button{
+    font-family: Lufga;
+}
 
 
 

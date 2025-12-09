@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: Lufga;
+    src: url('/LufgaRegular.ttf');
+}
+
 .joinTheClub {
     /* Dark background from the image */
     background-color: #F3F1EE;
@@ -43,10 +49,12 @@
     border: 1px solid #666;
     padding: 12px 25px;
     font-size: 16px;
+    font-family: Lufga;
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+
 }
 
 .club-member-button:hover {

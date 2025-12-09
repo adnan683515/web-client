@@ -377,16 +377,13 @@ body {
 .input-fields-wrapper {
     display: flex;
     flex-wrap: wrap;
-    /* Allows wrapping on smaller screens */
     justify-content: space-between;
     gap: 20px;
-    /* Spacing between rows and columns */
     margin-bottom: 30px;
 }
 
 .form-group {
     width: calc(50% - 10px);
-    /* Two columns (50% width minus half the gap) */
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -404,6 +401,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 15px;
     font-size: 1rem;
+    font-family: Lufga;
     transition: border-color 0.3s;
 }
 
@@ -427,6 +425,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     border: none;
+    font-family: Lufga;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s;
